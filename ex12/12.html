@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de Triângulos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 5px;
+            width: 100%;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #triangulo {
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Classificador de Triângulos</h2>
+        <input type="number" id="lado1" placeholder="Lado 1">
+        <input type="number" id="lado2" placeholder="Lado 2">
+        <input type="number" id="lado3" placeholder="Lado 3">
+        <button onclick="classificarTriangulo()">Classificar</button>
+        <p id="resultado"></p>
+        <svg id="triangulo" viewBox="0 0 100 100"></svg>
+    </div>
+
+    <script src="12.js"></script>
+</body>
+</html>
